@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Order Form</title>
+</head>
+<style>
+    body {
+        background-color: rgb(218, 223, 230);
+    }
+</style>
+<body>
+    <form style="margin: auto; width: 800px;" >
+        <fieldset>
+            <legend style="text-align: center;">PIZZA ORDER FORM</legend>
+
+            
+            <fieldset>
+                <legend>Delivery Address</legend>
+                Full Name: <input type="text" name="fullname" placeholder="Full Name">
+                Street Address: <input type="text" name="address" placeholder="Address"><br><br>
+                Phone: <input type="tel" name="phone" placeholder="Phone">
+                Email: <input type="email" name="email" placeholder="Email"><br><br>
+                Password: <input type="password" name="password" placeholder="Password">
+            </fieldset><br>
+
+        
+            <fieldset>
+                <legend>Payment Information</legend>
+                Card Type:
+                <select name="cardtype">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="discover">Discover</option>
+                </select>
+                Card Number: <input type="text" name="cardnumber" placeholder="Card Number"><br><br>
+                Name on Card: <input type="text" name="cardname" placeholder="Name">
+            </fieldset><br>
+
+        
+            <fieldset>
+                <legend>Customize Your Pizza</legend>
+                Pizza size:
+                <select name="pizzasize">
+                    <option value="large" selected>large</option>
+                    <option value="medium">medium</option>
+                    <option value="small">small</option>
+                </select>
+                Quantity: <input type="number" name="quantity"><br><br>
+
+                Spices:<br>
+                <input type="checkbox" name="spices" value="blackpepper"> Black pepper
+                <input type="checkbox" name="spices" value="bellpeppers"> Bell peppers
+                <input type="checkbox" name="spices" value="mayonnaise"> mayonnaise<br><br>
+
+                Other Requirements:<br>
+                <textarea name="otherrequirements" rows="4" cols="30">Any Other Requirements</textarea><br><br>
+
+                Meat:
+                <input type="radio" name="meat" value="fish"> Fish
+                <input type="radio" name="meat" value="cow"> Cow
+                <input type="radio" name="meat" value="chicken"> Chicken
+            </fieldset><br>
+
+            <input type="reset" value="Clear Order">
+            <input type="submit" value="Place Order">
+        </fieldset>
+    </form>
+</body>
+</html>
